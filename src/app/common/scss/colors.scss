@@ -1,0 +1,19 @@
+$success-color: #48BB78;
+$invalid-color: #f44336;
+$primary: #4facc9;
+
+.background-success {
+    background-color: $success-color;
+}
+
+.background-invalid {
+    background-color: $invalid-color;
+}
+
+.text-primary {
+    color: $primary !important;
+}
+
+.border-primary {
+    border-color: $primary;
+}
