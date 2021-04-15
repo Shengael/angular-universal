@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+
+    prod:
+        build:
+            context: .
+            dockerfile: Dockerfile
+            args:
+                target: 'staging'
+        ports:
+            - 8086:${PORT:-4000}

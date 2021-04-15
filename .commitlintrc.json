@@ -1,0 +1,7 @@
+{
+    "extends": ["@commitlint/config-angular"],
+    "rules": {
+        "scope-empty": [2, "never"],
+        "subject-case": [2, "always", "sentence-case"]
+    }
+}
