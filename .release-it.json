@@ -1,9 +1,15 @@
 {
+    "plugins": {
+        "@release-it/conventional-changelog": {
+            "preset": "angular",
+            "infile": "CHANGELOG.md"
+        }
+    },
     "npm": {
         "publish": false
     },
     "github": {
-        "release": false
+        "release": true
     },
     "git": {
         "requireCleanWorkingDir": false,
@@ -11,14 +17,9 @@
         "commit": true,
         "commitArgs": ["--no-verify"],
         "tag": true,
-        "tagAnnotation": "release: V${version}",
         "tagName": "release-${version}",
         "push": true,
         "pushRepo": null,
-        "changelog": false,
         "afterReleaseCommand": "npm run post:release"
-    },
-    "hooks": {
-        "before:git:bump": "./scripts/generate-changelog.sh ${version}"
     }
 }

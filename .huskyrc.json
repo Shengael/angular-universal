@@ -1,6 +1,6 @@
 {
-  "hooks": {
-    "commit-msg": "scripts/commit-format-hook.js $HUSKY_GIT_PARAMS",
-    "pre-commit": "eslint \"{src,apps,libs,test}/**/*.ts\""
-  }
+    "hooks": {
+        "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+        "pre-commit": "eslint \"{src,apps,libs,test}/**/*.ts\""
+    }
 }
